@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body {
+    background-color: #FFF5E0;
+    margin: 0px;
+    font-family: "Lucida Sans Unicode", sans-serif;
+    background-image: url('../Design/starglow.png');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #FFF5E0;
+    padding: 0px;
+    margin-left: 1rem;
+    margin-bottom: -1.5rem;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #E48586;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.signin-form {
+    background-color: rgba(252, 186, 173, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.signin-form::before {
+    content: "";
+    background-image: url('../Design/starglow.png');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.signin-form h2 {
+    text-align: center;
+    color: #FFF5E0;
+    font-size: 35px;
+}
+
+.signin-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #FFF5E0;
+}
+
+.signin-form input[type="text"],
+.signin-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #E48586;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.signin-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.signin-form .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #FFF5E0;
+    margin: 15px 0;
+}
+
+.signin-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #E48586;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFF5E0;
+    cursor: pointer;
+}
+
+.signin-form input[type="submit"]:hover {
+    background-color: #d67379;
+}
+
+.footer {
+    background-color: #FCBAAD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.starglow-text {
+    font-family: "Lucida Sans Unicode", sans-serif;
+    font-size: 80%;
+}
+</style>
+
+<head>
+    <title>Star Glow Co. - Sign In</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+            const email = document.getElementById('email').value;
+            if (!email.includes('@')) {
+                alert('Please enter a valid email address that contains an "@" character.');
+                return;
+            }
+            // Simulate successful form submission
+            alert('Sign in successful!');
+            window.location.href = 'Homepage.html'; // Redirect to the homepage
+        }
+    </script>
+</head>
+
+<body>
+
+    <!--navigation bar-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="Homepage.html"><img src="starglow.png" height="70" width="70"> </a></li>
+            <li><a href="About%20Us.html"> About Us </a></li>
+            <li><a href="Contacts.html"> Contact </a></li>
+            <li><a href="Cart.html"> Cart </a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form class="signin-form" onsubmit="handleSubmit(event)">
+            <h2>Sign In</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <div class="checkbox-label">
+                <input type="checkbox" id="age-verification" name="age-verification" required>
+                <label for="age-verification">I am 18 years or older</label>
+            </div>
+            
+            <input type="submit" value="Sign In">
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="starglow-text">
+            <p><b> S t a r &nbsp; G l o w &nbsp; C o . </b></p>
+        </div>
+    </div>
+
+</body>
+</html>
+

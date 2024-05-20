@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body{
+	background-color: #FFF5E0;
+	margin: 0px;
+}
+
+.navbar ul{
+	list-style-type: none;
+	background-color: #FFF5E0;
+	padding: 0px;
+	margin-left: 1rem;
+	margin-bottom: -1.5rem;
+	overflow: hidden;
+}
+
+	.navbar li {
+		float: left;
+	}
+
+
+	.navbar a {
+		text-decoration: none;
+		padding: 15px;
+		display: block;
+		text-align: center;
+		font-size: 30px;
+		font-family: "Lucida Sans Unicode", sans-serif;
+		color: #E48586;
+	}
+
+.marquee-horizontal2 {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.track-horizontal2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-horizontal 15s linear infinite;
+}
+
+.slides {
+  box-sizing: border-box;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+}
+
+@keyframes marquee-horizontal {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-66.8%);
+  }
+}
+
+p{
+	font-size: 150%;
+	text-align: center;
+	font-family: "Palatino Linotype", serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+.category{
+	background-color: #FCBAAD;
+	padding: 15px 10px; /* width and height*/
+	bottom: 4rem;
+}
+
+.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+			margin-bottom: 5rem;
+        }
+
+        .zoom-image {
+            overflow: hidden;
+            transition: transform 0.3s;
+            margin: 10; /* Remove spacing between divs */
+        }
+
+        .zoom-image img {
+            width: 45vh; /* Set the width you desire */
+            height: auto;
+            transition: transform 0.3s;
+            display: block; /* Remove extra space below images */
+            margin: 0.5rem; /* Remove spacing within divs */
+        }
+
+        .zoom-image:hover {
+            transform: scale(1.1);
+        }
+
+.category2{
+	margin: -1rem;
+}
+
+.good-intentions {
+	display: flex;
+	justify-content: center;
+}
+
+.good-intentions img {
+	width: 15%;
+	align-items: center;
+	margin: 1rem;
+}
+
+.footer {
+	background-color: #FCBAAD;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.starglow-text{
+	font-family: "Lucida Sans Unicode", sans-serif;
+	font-size: 80%;
+}
+
+</style>
+
+<head>
+
+<title>Star Glow Co.</title>
+
+</head>
+
+<body>
+	
+	<!--navigation bar-->
+	<nav class = "navbar">
+		<ul>
+		<li><a href = "Homepage.html"><img src = "starglow.png" height = "70" width = "70"> </a></li>
+		<li><a href = "About%20Us.html"> About Us </a></li>
+		<li><a href = "Contacts.html"> Contact </a></li>
+		<li><a href = "Cart.html"> Cart </a></li>
+		</ul>
+	</nav>
+	
+	<div class="marquee-horizontal2">
+    <div class="track-horizontal2">
+        <div class="slides"><img src = "Local.png" width="828" height="467" alt="Collage" /></div>
+        <div class="slides"><img src = "Maybelline.jpg" width="828" height="467" alt="Maybelline" /></div>
+        <div class="slides"><img src = "Careline.webp" width="828" height="467" alt="Careline" /></div>
+        <div class="slides"><img src = "VIce.jpg" width="828" height="467" alt="BT21" /></div>
+		<div class="slides"><img src = "Brand.webp" width="828" height="467" alt="Collage" /></div>
+		<div class="slides"><img src = "issy.jpeg" width="828" height="467" alt="Maybelline" /></div>
+    </div>
+	</div>
+	
+	<p> Star Glow Co. is a makeup blog for all types of skins. <br> Where makeup becomes a means of self-expression and confidence, where the beauty of diversity truly shines. </p> 
+	
+	
+	<div class = "category">
+		<h1><center> shop by category </center></h1>
+		<div class = "container">
+			<div class="zoom-image">
+				<a href = "Face.html"><img src="face.png" alt="Face Image"></a>
+			</div>
+			<div class="zoom-image">
+				<a href = "FINAL%20PROJ.html"><img src="lips.png" alt="Lips Image"></a>
+			</div>
+			<div class="zoom-image">
+				<a href = "Eyes.html"><img src="eyes.png" alt="Eyes Image"></a>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class = "category2">
+		<h1><center> made with good intentions </center></h1>
+			<div class = "good-intentions">
+			<img src = "crueltyfree.png" alt="Cruelty Free">
+			<img src = "skincaring.png" alt="Skin Caring Makeup">
+			<img src = "alltypes.png" alt="Cruelty Free">
+			<img src = "sourcedfrom.png" alt="All Types of Skin">
+			</div>
+	</div>
+	
+	<div class = "footer">
+		<div class = "starglow-text">
+			<p><b> S t a r &nbsp; G l o w &nbsp; C o . </b></p>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        background-color: #FFF5E0;
+        margin: 0px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        background-color: #FFF5E0;
+        padding: 0px;
+        margin-left: 1rem;
+        margin-bottom: -1.5rem;
+        overflow: hidden;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Lucida Sans Unicode", sans-serif;
+        color: #E48586;
+    }
+
+    .about {
+        background-color: #FCBAAD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+    }
+
+    .about img {
+        margin: 50px;
+
+    }
+
+    .paragraph {
+        margin: 30px;
+    }
+
+    h1 {
+        font-family: "Tahoma", Times, serif;
+        font-size: 45px;
+    }
+
+    h3 {
+        font-family: "Lucida Sans Unicode", sans-serif;
+        font-size: 25px;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        width: 33.3%;
+        margin: 0 auto;
+        /* This will center the column horizontally */
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+
+    .column1 {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        margin-left: 31.5rem;
+        padding: 0 8px;
+    }
+
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .footer {
+        background-color: #FCBAAD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .starglow-text {
+        font-family: "Lucida Sans Unicode", sans-serif;
+        font-size: 80%;
+        color: black;
+    }
+</style>
+
+<body>
+    <nav class = "navbar">
+		<ul>
+		<li><a href = "Homepage.html"><img src = "starglow.png" height = "70" width = "70"> </a></li>
+		<li><a href = "About%20Us.html"> About Us </a></li>
+		<li><a href = "Contacts.html"> Contact </a></li>
+		<li><a href = "Cart.html"> Cart </a></li>
+		</ul>
+	</nav>
+
+    <div class="about">
+        <img src="makeup-model.jpg" width="450" height="730" alt="makeup-model">
+        <div class="paragraph">
+            <h1> A B O U T &nbsp; S T A R &nbsp; G L O W &nbsp; C O . </h1>
+            <h3> Catering to budding makeup artists, this blog specializes in advocating for morena makeup and Filipino-friendly
+                beauty products, offering invaluable advice and tutorials specifically tailored to the needs of young and novice individuals
+                venturing into the world of makeup artistry. With a focus on inclusivity, it highlights techniques and product recommendations
+                that embrace the diverse spectrum of the Filipino skin, empowering beginners to explore and celebrate their unique beauty. </h3>
+        </div>
+    </div>
+
+    <!--Our team-->
+    <h2 style="text-align:center">MEET THE PERSON</h2>
+
+    <div class="column">
+        <div class="card">
+            <img src="Jam.jpg" alt="Jam Mancera" style="width:100%">
+            <div class="container">
+                <h2>Jamaica Valdez</h2>
+                <p class="title">Student</p>
+                <p>"Lipstick is really magical. It holds more than a waxy bit of color -
+                    it holds the promise of a brilliant smile, a brilliant day, both literally and figuratively."</p>
+				<p>"jamaica.valdez@adamson.edu.ph"</p>
+                <p><a href="mailto:jamaica.valdez@adamson.edu.ph" class="button">Contact</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="starglow-text">
+            <p><b> S t a r &nbsp; G l o w &nbsp; C o . </b></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+

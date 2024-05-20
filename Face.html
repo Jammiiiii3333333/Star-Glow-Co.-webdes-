@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        background-color: #FFF5E0;
+        margin: 0px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        background-color: #FFF5E0;
+        padding: 0px;
+        margin-left: 1rem;
+        margin-bottom: -1.5rem;
+        overflow: hidden;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Lucida Sans Unicode", sans-serif;
+        color: #E48586;
+    }
+
+    .marquee-horizontal2 {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .track-horizontal2 {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee-horizontal 15s linear infinite;
+    }
+
+    .slides {
+        box-sizing: border-box;
+        padding-right: 0.3em;
+        padding-left: 0.3em;
+        -webkit-box-flex: 0;
+        flex: 0 0 auto;
+    }
+
+    @keyframes marquee-horizontal {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-66.8%);
+        }
+    }
+
+    p {
+        font-size: 150%;
+        text-align: center;
+        font-family: "Palatino Linotype", serif;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .category {
+        background-color: #FCBAAD;
+        padding: 15px 10px;
+        bottom: 4rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        margin-bottom: 5rem;
+    }
+
+    .zoom-image {
+        overflow: hidden;
+        transition: transform 0.3s;
+        margin: 10;
+    }
+
+    .zoom-image img {
+        width: 45vh;
+        height: auto;
+        transition: transform 0.3s;
+        display: block;
+        margin: 0.5rem;
+    }
+
+    .zoom-image:hover {
+        transform: scale(1.1);
+    }
+
+    .category2 {
+        margin: -1rem;
+    }
+
+    .good-intentions {
+        display: flex;
+        justify-content: center;
+    }
+
+    .good-intentions img {
+        width: 15%;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .footer {
+        background-color: #FCBAAD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .starglow-text {
+        font-family: "Lucida Sans Unicode", sans-serif;
+        font-size: 80%;
+    }
+
+    /* Shopee-like product listings */
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Adjusted spacing */
+        align-items: flex-start;
+    }
+
+    .product {
+        width: 200px;
+        margin: 20px; /* Adjusted margin */
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .product:hover {
+        transform: translateY(-5px);
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .product-info {
+        margin-top: 10px;
+    }
+
+    .product-info p {
+        margin: 5px 0;
+    }
+
+    .product-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .add-to-cart,
+    .view-product {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #ee4d2d;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .add-to-cart:hover,
+    .view-product:hover {
+        background-color: #e0330d;
+    }
+</style>
+
+<head>
+
+    <title>Star Glow Co.</title>
+
+</head>
+
+<body>
+
+    <!--navigation bar-->
+   <nav class = "navbar">
+		<ul>
+		<li><a href = "Homepage.html"><img src = "starglow.png" height = "70" width = "70"> </a></li>
+		<li><a href = "About%20Us.html"> About Us </a></li>
+		<li><a href = "Contacts.html"> Contact </a></li>
+		<li><a href = "Cart.html"> Cart </a></li>
+		</ul>
+	</nav>
+    <HR>
+
+    <H2><CENTER>‧₊˚❀༉‧₊˚.FACE PRODUCTS₊˚❀༉‧₊˚.</CENTER></H2>
+
+    <div class="marquee-horizontal2">
+        <div class="track-horizontal2">
+            <div class="slides"><img src="E.png" width="600" height="500" alt="Collage" /></div>
+            <div class="slides"><img src="F.png" width="600" height="500" alt="Maybelline" /></div>
+            <div class="slides"><img src="G.png" width="600" height="500" alt="Careline" /></div>
+            <div class="slides"><img src="H.png" width="600" height="500" alt="BT21" /></div>
+        </div>
+    </div>
+
+    <p>Foundation, concealer, blush and contour products are essential for achieving flawless makeup looks. Foundation provides an even base, concealer hides imperfections, and contouring defines facial features.
+        Used individually or together, they offer versatility and customization for various makeup styles.</p>
+
+    <div class="category">
+        <h1><center> The best product for your Face </center></h1>
+        <H3><CENTER> This Face products are hand pick and tested by us giving you a authentic and trusted review and recommendation that will not disappoint your wallet and you.</CENTER></H3>
+        <div class="container">
+            <div class="product-container">
+                <div class="product">
+                    <img src="5.jpg" alt="Foundation">
+                    <div class="product-info">
+                        <p>Foundation</p>
+                        <p>$19.00</p>
+                        <div class="product-buttons">
+                            <a href="#" class="add-to-cart" onclick="addToCart('Foundation', '$19.00', '5.jpg')">Add to Cart</a>
+                            <button class="view-product" onclick="showMessage('Foundation', '$19.00')">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="6.jpg" alt="Concealer">
+                    <div class="product-info">
+                        <p>Concealer</p>
+                        <p>$8.99</p>
+                        <div class="product-buttons">
+                            <a href="#" class="add-to-cart" onclick="addToCart('Concealer', '$8.99', '6.jpg')">Add to Cart</a>
+                            <button class="view-product" onclick="showMessage('Concealer', '$8.99')">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="7.jpg" alt="Blush On">
+                    <div class="product-info">
+                        <p>Blush On</p>
+                        <p>$12.99</p>
+                        <div class="product-buttons">
+                            <a href="#" class="add-to-cart" onclick="addToCart('Blush On', '$12.99', '7.jpg')">Add to Cart</a>
+                            <button class="view-product" onclick="showMessage('Blush On', '$12.99')">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="8.jpg" alt="Contour">
+                    <div class="product-info">
+                        <p>Contour</p>
+                        <p>$15.99</p>
+                        <div class="product-buttons">
+                            <a href="#" class="add-to-cart" onclick="addToCart('Contour', '$15.99', '8.jpg')">Add to Cart</a>
+                            <button class="view-product" onclick="showMessage('Contour', '$15.99')">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category2">
+        <h1><center> made with good intentions </center></h1>
+        <div class="good-intentions">
+            <img src="crueltyfree.png" alt="Cruelty Free">
+            <img src="skincaring.png" alt="Skin Caring Makeup">
+            <img src="alltypes.png" alt="Cruelty Free">
+            <img src="sourcedfrom.png" alt="All Types of Skin">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="starglow-text">
+            <p><b> S t a r &nbsp; G l o w &nbsp; C o . </b></p>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(productName, price, imageUrl) {
+            var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            var newItem = { name: productName, price: price, imageUrl: imageUrl };
+            cartItems.push(newItem);
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            alert("Product added to cart:\n" + productName + "\nPrice: " + price);
+        }
+    </script>
+
+</body>
+
+</html>

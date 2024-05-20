@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        background-color: #FFF5E0;
+        margin: 0px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        background-color: #FFF5E0;
+        padding: 0px;
+        margin-left: 1rem;
+        margin-bottom: -1.5rem;
+        overflow: hidden;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Lucida Sans Unicode", sans-serif;
+        color: #E48586;
+    }
+
+    h1 {
+        font-family: "Tahoma", Times, serif;
+        font-size: 40px;
+    }
+
+    h3 {
+        font-family: "Lucida Sans Unicode", sans-serif;
+    }
+
+    .main-container {
+        background-image: url('makeupbanner.png');
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin: 20px;
+        font-family: "Impact", serif;
+    }
+
+    .help {
+        padding-left: 150px;
+        color: white;
+    }
+
+    .container {
+        display: flex;
+        padding-left: 150px;
+        margin: 15px;
+    }
+
+    .email,
+    .call,
+    .send-email {
+        font-family: "Verdana", Times, serif;
+        font-size: 20px;
+        color: white;
+    }
+
+    .footer {
+        background-color: #FCBAAD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .starglow-text {
+        font-family: "Lucida Sans Unicode", sans-serif;
+        font-size: 80%;
+        color: white;
+    }
+
+    .input-container {
+        margin-bottom: 15px;
+    }
+
+    .input-container label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-container input[type="text"],
+    .input-container input[type="email"],
+    .input-container textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .send-email button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: #E48586;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .send-email button:hover {
+        background-color: #D34D5E;
+    }
+</style>
+
+<head>
+
+    <title>Contact</title>
+
+</head>
+
+<body>
+
+    <!--navigation bar-->
+   <nav class = "navbar">
+		<ul>
+		<li><a href = "Homepage.html"><img src = "starglow.png" height = "70" width = "70"> </a></li>
+		<li><a href = "About%20Us.html"> About Us </a></li>
+		<li><a href = "Contacts.html"> Contact </a></li>
+		<li><a href = "Cart.html"> Cart </a></li>
+		</ul>
+	</nav>
+
+    <h1><center> C O N T A C T &nbsp; U S </center></h1>
+    <h3><center> If you have any questions or comments please feel free to contact us through our emails and number. </center></h3>
+
+    <div class="main-container">
+        <h1 class="help"> How can we help? </h1>
+        <div class="container">
+            <div class="email"> <!--first container-->
+                <p> Email Us </p>
+                <a href="mailto:starglowco@gmail.com" class="mailto"><b>starglowco@gmail.com</b></a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="call"> <!--second container-->
+                <p> Call Us </p>
+                <p><b>mobile: 09166902252 </b></p>
+            </div>
+        </div>
+
+        <div class="send-email">
+            <p>or Send us an Email</p>
+            <form id="emailForm" action="mailto:starglowco@gmail.com" method="post" enctype="text/plain">
+                <div class="input-container">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required placeholder="Name">
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email1" id="email" required placeholder="Email">
+                </div>
+                <div class="input-container">
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" required placeholder="Subject">
+                </div>
+                <div class="input-container">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" onclick="sendEmail()">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="starglow-text">
+            <p><b> S t a r &nbsp; G l o w &nbsp; C o . </b></p>
+        </div>
+    </div>
+
+    <script>
+        function sendEmail() {
+            var name = document.getElementById("name").value;
+            alert("Thank you for your review, " + name + "!");
+        }
+    </script>
+
+</body>
+
+</html>
+
